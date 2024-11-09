@@ -15,13 +15,14 @@ kind: Pod
 metadata: 
   name: pod-2
 spec:
-  podAffinity:
+ affinity:
+    podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
           matchExpressions:
           - key: purpose
             operator: In
-            values: 
+            values:
             - affinity
         topologyKey: topology.kubernetes.io/zone
   containers:
