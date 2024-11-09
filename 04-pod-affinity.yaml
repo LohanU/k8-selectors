@@ -21,8 +21,8 @@ spec:
           matchExpressions:
           - key: purpose
             operator: In
-            values: affinity
-            - 
+            values: 
+            - affinity
         topologyKey: topology.kubernetes.io/zone
   containers:
   # docker run -d --name nginx nginx
